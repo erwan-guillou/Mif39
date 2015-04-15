@@ -192,6 +192,7 @@ public:
         index = lindex;
         return result;
     }
+
     static ByteBuffer ToBuffer ( const SharedResourcePtr& res ) {
         BaseResourceDescriptor* desc = mResourceDescriptors [ res->mTypeID ];
         ByteBuffer uuid = toBuffer ( desc->mResourceTypeID );

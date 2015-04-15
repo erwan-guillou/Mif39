@@ -7,4 +7,3 @@
 #include "Networking/connectionstream.hpp"
 
 #endif // NETWORKING_HPP
-

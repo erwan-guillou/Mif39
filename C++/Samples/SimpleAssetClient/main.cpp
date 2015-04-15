@@ -26,7 +26,7 @@ int main ( int argc, char** argv ) {
     ByteBuffer message = ResourceHolder::ToBuffer(ptr);
 
     SimpleTcpEndPoint::Options options;
-    options.serverIP = "127.0.0.1";
+    options.serverIP = "192.168.1.25";
     options.connectionPort = 3000;
     SimpleTcpEndPoint client ( options );
     if ( client.open() == false ) exit ( -1 );

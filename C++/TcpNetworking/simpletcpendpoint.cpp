@@ -68,4 +68,3 @@ bool SimpleTcpEndPoint::dataAvailable()
 {
     return mSocket->dataAvailable();
 }
-

@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 2.8)
+
+project ( ServeurApplication CXX )
+file ( GLOB_RECURSE SRC *.?pp )
+add_executable(ServeurApplication ${SRC})
+
+target_link_libraries(ServeurApplication Server)
+target_link_libraries(ServeurApplication Qt5::Core)
+target_link_libraries(ServeurApplication Utility)
+target_link_libraries(ServeurApplication Qt5::Gui)
+target_link_libraries(ServeurApplication Networking)
+target_link_libraries(ServeurApplication TcpNetworking)
+target_link_libraries(ServeurApplication AssetInterfaces)
+target_link_libraries(ServeurApplication AssetGenerics)
+target_link_libraries(ServeurApplication Assets)
+target_link_libraries(ServeurApplication Wavefront)
+target_link_libraries(ServeurApplication QImageLoader)
